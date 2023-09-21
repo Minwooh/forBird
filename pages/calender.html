@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css 폴더 따로 안만들었음 -->
+    <style>
+      /* 나중에 background-color은 container만빼고 내비두셈 */
+      #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* 요소들을 수직 중앙으로 정렬 */
+        margin: 0 auto;
+        width: 390px;
+        height: 844px;
+        background-color: #000;
+      }
+      #topContainer {
+        margin-top: 20px;
+        height: 100px;
+        background-color: #e56767;
+      }
+      #dateContainer {
+        margin-top: 20px;
+        padding-left: 26px;
+        height: 20px;
+        background-color: #1399ca;
+      }
+      #calender {
+        margin-top: 7px;
+        height: 290px;
+        background-color: #db1024;
+      }
+      #todayDate {
+        text-align: center;
+        margin-top: 25px;
+        height: 21px;
+        background-color: #40b40a;
+      }
+      #todoText {
+        text-align: center;
+        margin-top: 7px;
+        height: 40px;
+        background-color: #7139d1;
+      }
+      #addBox {
+        margin-top: 20px;
+        height: 140px;
+        background-color: #2109bd;
+      }
+      #bottomContainer {
+        margin-top: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: 50px;
+        background-color: #d4baba;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="topContainer">
+        <!-- 로고이미지 넣으셈 -->
+        <span id="logoutBtn">로그아웃</span>
+      </div>
+      <div id="dateContainer">
+        <span id="year">2023</span>년 <span id="month">9</span>년
+        <span><</span>
+        <span>></span>
+      </div>
+      <div id="calender">
+        <div>일월하수목금토</div>
+        <!-- 네모들넣기 -->
+      </div>
+      <div id="todayDate">
+        <span id="todayYear">2023</span>년 <span id="todayMonth">9</span>년
+        <span id="todayDate">23</span>일
+      </div>
+      <div id="todoText">TO DO</div>
+      <div id="addBox"></div>
+      <div id="bottomContainer">
+        <img src="/images/link.png" style="width: 70px" />
+        <img src="/images/link.png" style="width: 70px" />
+        <img src="/images/link.png" style="width: 70px" />
+        <img src="/images/link.png" style="width: 70px" />
+        <img src="/images/link.png" style="width: 70px" />
+      </div>
+    </div>
+  </body>
+</html>
